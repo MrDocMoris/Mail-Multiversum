@@ -1,7 +1,7 @@
 {
-  "build": 1,
-  "version": "1.1",
-  "size": 6002698,
-  "apk": "https://github.com/MrDocMoris/Mail-Multiversum/releases/download/v1.1/Mail-Multiversum.apk",
-  "notes": "Erste Version: Posteo-Mails lesen, schreiben, Ordner, sichere Anzeige, Benachrichtigungen"
+  "build": 2,
+  "version": "1.2",
+  "size": 6002963,
+  "apk": "https://github.com/MrDocMoris/Mail-Multiversum/releases/download/v1.2/Mail-Multiversum.apk",
+  "notes": "Anmeldung mit Posteo-Anwendungs-Passwort: Hinweis und genauere Fehlermeldung"
 }
