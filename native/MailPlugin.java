@@ -101,7 +101,8 @@ public class MailPlugin extends Plugin {
                 }
             } catch (AuthenticationFailedException e) {
                 reset();
-                call.reject("Anmeldung fehlgeschlagen – E-Mail-Adresse oder Passwort stimmt nicht.", "AUTH", e);
+                String srv = e.getMessage() == null ? "" : e.getMessage().trim();
+                call.reject("Posteo hat die Anmeldung abgelehnt. Für Mail-Apps brauchst du ein Anwendungs-Passwort (Posteo im Browser → Einstellungen → Passwort und Sicherheit)." + (srv.isEmpty() ? "" : " Antwort von Posteo: " + srv), "AUTH", e);
             } catch (Exception e) {
                 if (e instanceof MessagingException && !(e instanceof javax.mail.SendFailedException)) {
                     Exception inner = ((MessagingException) e).getNextException();
