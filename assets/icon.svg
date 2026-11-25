@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+<defs>
+  <radialGradient id="bg" cx="50%" cy="42%" r="72%"><stop offset="0" stop-color="#2b1c78"/><stop offset=".5" stop-color="#140d3a"/><stop offset="1" stop-color="#07061a"/></radialGradient>
+  <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#66e0ff"/><stop offset=".5" stop-color="#9b7bff"/><stop offset="1" stop-color="#ff5ec8"/></linearGradient>
+  <linearGradient id="env" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a2160"/><stop offset="1" stop-color="#15103a"/></linearGradient>
+  <linearGradient id="flap" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#6fe3ff"/><stop offset=".55" stop-color="#a78bff"/><stop offset="1" stop-color="#e59bff"/></linearGradient>
+  <linearGradient id="shield" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7dffb5"/><stop offset="1" stop-color="#1fa37a"/></linearGradient>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="18"/></filter>
+</defs>
+<rect width="1024" height="1024" fill="url(#bg)"/>
+<g fill="#fff">
+  <circle cx="160" cy="190" r="4" opacity=".7"/><circle cx="860" cy="150" r="3" opacity=".6"/><circle cx="900" cy="560" r="4" opacity=".55"/>
+  <circle cx="120" cy="640" r="3" opacity=".6"/><circle cx="300" cy="900" r="4" opacity=".5"/><circle cx="780" cy="890" r="3" opacity=".6"/>
+  <circle cx="520" cy="110" r="3" opacity=".5"/><circle cx="70" cy="420" r="2.5" opacity=".6"/>
+</g>
+<!-- Umlaufbahn -->
+<ellipse cx="512" cy="540" rx="420" ry="150" fill="none" stroke="url(#ring)" stroke-width="14" opacity=".55" transform="rotate(-18 512 540)"/>
+<!-- Briefumschlag -->
+<rect x="222" y="322" width="580" height="400" rx="60" fill="#6a4cff" opacity=".55" filter="url(#glow)"/>
+<rect x="222" y="322" width="580" height="400" rx="60" fill="url(#env)" stroke="url(#ring)" stroke-width="12"/>
+<path d="M262 362 512 552 762 362" fill="none" stroke="url(#flap)" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M262 682 432 520M762 682 592 520" fill="none" stroke="#3a2f80" stroke-width="18" stroke-linecap="round"/>
+<!-- Schild (sicher) -->
+<path d="M712 560c40 18 80 22 110 20v90c0 70-50 120-110 140-60-20-110-70-110-140v-90c30 2 70-2 110-20z" fill="url(#shield)" stroke="#07061a" stroke-width="14"/>
+<path d="M664 680l32 32 62-66" fill="none" stroke="#07261a" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+<!-- Planeten -->
+<circle cx="130" cy="650" r="34" fill="#7fe3ff"/>
+<circle cx="896" cy="420" r="34" fill="#e59bff"/>
+</svg>
